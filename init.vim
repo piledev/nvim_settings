@@ -56,7 +56,8 @@ set inccommand=split
 set autoindent
 set clipboard=unnamed
 set hls
-
+set termguicolors
+set pumblend=10
 " ------------------------------------------------------------
 " dein.vim set up
 " ------------------------------------------------------------
@@ -64,9 +65,6 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
-"let s:dein_dir = expand('/Users/jumpei/.vim/dein')    
-"let s:dein_repo_dir = s:dein_dir .  '/repos/github.com/Shougo/dein.vim'    
-"let s:toml_dir = expand('/Users/jumpei/.config/nvim')    
 let s:dein_dir = expand('~/.vim/dein')    
 let s:dein_repo_dir = s:dein_dir .  '/repos/github.com/Shougo/dein.vim'    
 let s:toml_dir = expand('~/.config/nvim')    
@@ -98,4 +96,5 @@ nnoremap <silent> <Leader>f :<C-u>Defx<CR>
 
 autocmd BufWritePost * call defx#redraw()
 autocmd BUfEnter * call defx#redraw()
+
 

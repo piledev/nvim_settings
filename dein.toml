@@ -13,31 +13,31 @@ hook_add='''
 # [[plugins]]
 # repo = 'mattn/vim-lsp-settings'
 
+# [[plugins]]
+# repo = 'mattn/vim-lsp-icons'
+
+# [[plugins]]
+# repo = 'hrsh7th/vim-vsnip'
+
+# [[plugins]]
+# repo = 'hrsh7th/vim-vsnip-integ'
+
+# [[plugins]]
+# repo = 'lighttiger2505/deoplete-vim-lsp'
+
+# [[plugins]]                                    
+# repo = 'Shougo/neosnippet.vim'                                          
+
+# [[plugins]]                                    
+# repo = 'Shougo/neosnippet-snippets'                                          
+
 #  [[plugins]]
-#  repo = 'mattn/vim-lsp-icons'
-
-[[plugins]]
-repo = 'hrsh7th/vim-vsnip'
-
-[[plugins]]
-repo = 'hrsh7th/vim-vsnip-integ'
-
-[[plugins]]
-repo = 'lighttiger2505/deoplete-vim-lsp'
-
-[[plugins]]                                    
-repo = 'Shougo/neosnippet.vim'                                          
-
-[[plugins]]                                    
-repo = 'Shougo/neosnippet-snippets'                                          
-
-[[plugins]]
-repo = 'Shougo/deoplete.nvim'
-on_event = 'InsertCharPre'
-hook_source = '''
-  source ~/.config/nvim/deoplete.vim
-'''
-on_i = 1
+#  repo = 'Shougo/deoplete.nvim'
+#  on_event = 'InsertCharPre'
+#  hook_source = '''
+#    source ~/.config/nvim/deoplete.vim
+#  '''
+#  on_i = 1
 
 [[plugins]]
 repo = 'kristijanhusak/defx-git'
@@ -58,10 +58,6 @@ hook_add = '''
   source ~/.config/nvim/defx.vim
 '''
 
-[[plugins]]                                    
-repo = 'dracula/vim'                                          
-name = 'dracula'
-
 [[plugins]]
 repo = 'neoclide/coc.nvim'
 rev = 'release'
@@ -72,7 +68,29 @@ hook_add = '''
   source ~/.config/nvim/coc.vim
 '''
 
+# [[plugins]]                                    
+# repo = 'altercation/vim-colors-solarized'
+# name = 'solarized'
+
+[[plugins]]
+repo = 'tpope/vim-commentary'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'maxmellon/vim-jsx-pretty'
+
+[[plugins]]
+repo = 'HerringtonDarkholme/yats.vim'
+
 [[plugins]]                                    
-repo = 'altercation/vim-colors-solarized'
-name = 'solarized'
+repo = 'dracula/vim'                                          
+name = 'dracula'
+hook_add = '''
+  source ~/.config/nvim/dracula.vim
+'''
+
 
