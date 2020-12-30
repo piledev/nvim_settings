@@ -1,26 +1,32 @@
+# dein
 [[plugins]]                                    
 repo = 'Shougo/dein.vim' 
 
+# denite
 [[plugins]]                                    
 repo = 'Shougo/denite.nvim'                                          
 hook_add='''
   source ~/.config/nvim/denite.vim
 '''
 
-# [[plugins]]
-# repo = 'prabirshrestha/vim-lsp'
+# defx
+[[plugins]]
+repo = 'Shougo/defx.nvim'
+depends = ['defx-git', 'defx-icons']
+hook_add = '''
+  source ~/.config/nvim/defx.vim
+'''
+[[plugins]]
+repo = 'kristijanhusak/defx-git'
+hook_add = '''
+  source ~/.config/nvim/defx-git.vim
+'''
+[[plugins]]
+repo = 'kristijanhusak/defx-icons'
+depends = ['vim-devicons']
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
 
-# [[plugins]]
-# repo = 'mattn/vim-lsp-settings'
-
-# [[plugins]]
-# repo = 'mattn/vim-lsp-icons'
-
-# [[plugins]]
-# repo = 'hrsh7th/vim-vsnip'
-
-# [[plugins]]
-# repo = 'hrsh7th/vim-vsnip-integ'
 
 # [[plugins]]
 # repo = 'lighttiger2505/deoplete-vim-lsp'
@@ -39,25 +45,8 @@ hook_add='''
 #  '''
 #  on_i = 1
 
-[[plugins]]
-repo = 'kristijanhusak/defx-git'
-hook_add = '''
-  source ~/.config/nvim/defx-git.vim
-'''
 
-[[plugins]]
-repo = 'ryanoasis/vim-devicons'
-
-[[plugins]]
-repo = 'kristijanhusak/defx-icons'
-
-[[plugins]]
-repo = 'Shougo/defx.nvim'
-depends = ['defx-git', 'defx-icons']
-hook_add = '''
-  source ~/.config/nvim/defx.vim
-'''
-
+# Coc
 [[plugins]]
 repo = 'neoclide/coc.nvim'
 rev = 'release'
@@ -68,29 +57,45 @@ hook_add = '''
   source ~/.config/nvim/coc.vim
 '''
 
-# [[plugins]]                                    
-# repo = 'altercation/vim-colors-solarized'
-# name = 'solarized'
-
+# comment
 [[plugins]]
 repo = 'tpope/vim-commentary'
 
+# status bar
 [[plugins]]
 repo = 'vim-airline/vim-airline'
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
 
+# React Highliting
 [[plugins]]
 repo = 'maxmellon/vim-jsx-pretty'
-
 [[plugins]]
 repo = 'HerringtonDarkholme/yats.vim'
 
+# color scheme
 [[plugins]]                                    
 repo = 'dracula/vim'                                          
 name = 'dracula'
 hook_add = '''
   source ~/.config/nvim/dracula.vim
 '''
+# [[plugins]]                                    
+# repo = 'altercation/vim-colors-solarized'
+# name = 'solarized'
 
 
+# closing bracket complement
+[[plugins]]                                    
+repo = 'cohama/lexima.vim' 
+
+# emmet
+[[plugins]]
+repo = 'mattn/emmet-vim'
+
+# cheatsheet
+[[plugins]]
+repo = 'reireias/vim-cheatsheet'
+hook_add = '''
+  let g:cheatsheet#cheat_file = '~/.config/nvim/cheatsheet.md'
+'''

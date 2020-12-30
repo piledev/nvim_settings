@@ -22,7 +22,7 @@ call defx#custom#option('_', {
       \ 'buffer_name': 'explorer',
       \ 'toggle': 1,
       \ 'resume': 1,
-      \ 'columns': 'indent:icons:filename:mark',
+      \ 'columns': 'indent:git:icons:filename:mark',
       \ })
 
 nnoremap <silent>fi :<C-u>Defx -new `expand('%:p:h')` -search=`expand('%:p')`<CR>
