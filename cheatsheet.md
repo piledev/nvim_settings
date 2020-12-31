@@ -2,7 +2,10 @@
 
 ## Vim
 
-- <C-w> : <prefix> of window operation
+- <c-w> : <prefix> of window operation
+- <c-w>s : split current window horizontal
+- <c-w>v : split current window vertical
+- <c-w>q : close current window
 
 ## Vim plugins
 
@@ -10,16 +13,18 @@
 
 - gcc : comment out or uncomment current-line
 
-### emmet-vim
+### [emmet-vim](https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL)
 
-- <C-y>, : emmet change
-- [syntax](https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL)
-- example: #page>div.logo+ul#navigation>li\*5>a{Item $}
+- <C-y>, : emmet run
 
 ### Coc
 
-- :CocInstall <coc-example> : Install Coc-plugin
+- :CocInstall [plugin name] : Install Coc-plugin
 - search plugins at [here](https://www.npmjs.com/search?q=keywords%3Acoc.nvim)
+
+### vim-prettier
+
+- <leader>p : prettier run
 
 ## tmux
 

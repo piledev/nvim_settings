@@ -5,6 +5,7 @@
 cnoremap init :<C-u>edit $MYVIMRC<CR>      " init.vim 呼び出し
 noremap <Space>s :source $MYVIMRC<CR>      " init.vim 読み込み
 noremap <Space>w :<C-u>w<CR>               " ファイル保存
+noremap <F3> :<C-u>setlocal relativenumber!<CR>
 nnoremap <C-h> <C-w>h                      " vim 画面間の移動
 nnoremap <C-j> <C-w>j                      " 画面移動
 nnoremap <C-k> <C-w>k                      " 画面移動

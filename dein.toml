@@ -99,3 +99,21 @@ repo = 'reireias/vim-cheatsheet'
 hook_add = '''
   let g:cheatsheet#cheat_file = '~/.config/nvim/cheatsheet.md'
 '''
+
+# tag closing
+[[plugins]]
+repo = 'alvan/vim-closetag'
+hook_add = '''
+  source ~/.config/nvim/vim-closetag.vim
+'''
+
+[[plugins]] # lint tool
+repo = 'dense-analysis/ale'
+hook_add = '''
+  source ~/.config/nvim/ale.vim
+'''
+hook_post_source = '''
+let g:ale_linters = {
+  \'Dockerfile': ['dockerfile_lint', 'hadolint']
+  \}
+'''
