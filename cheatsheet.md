@@ -19,8 +19,12 @@
 
 ### Coc
 
+- gd: code jump
+
+  - <c-o>: back
+
 - :CocInstall [plugin name] : Install Coc-plugin
-- search plugins at [here](https://www.npmjs.com/search?q=keywords%3Acoc.nvim)
+  - search plugins at [here](https://www.npmjs.com/search?q=keywords%3Acoc.nvim)
 
 ### vim-prettier
 

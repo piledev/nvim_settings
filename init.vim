@@ -10,14 +10,19 @@ nnoremap <C-h> <C-w>h                      " vim 画面間の移動
 nnoremap <C-j> <C-w>j                      " 画面移動
 nnoremap <C-k> <C-w>k                      " 画面移動
 nnoremap <C-l> <C-w>l                      " 画面移動
-
+" nnoremap sj <C-w>j
+" nnoremap sk <C-w>k
+" nnoremap sl <C-w>l
+" nnoremap sh <C-w>h
+nnoremap ss :<C-u>sp<CR><C-w>j
+nnoremap sv :<C-u>vs<CR><C-w>l
 
 " Insert Mode
 inoremap <silent> jj <ESC>
 
 " Insert Mode movekey bind
 inoremap <C-d> <BS>
-inoremap <C-h> <Left>                                                                                                                 
+nnoremap <C-h> <Left>                                                                                                                 
 inoremap <C-l> <Right>
 inoremap <C-k> <Up> 
 inoremap <C-j> <Down>
@@ -57,6 +62,7 @@ set inccommand=split
 set autoindent
 set clipboard=unnamed
 set hls
+set background=dark
 set termguicolors
 set pumblend=10
 " ------------------------------------------------------------
@@ -91,11 +97,4 @@ endif
 filetype plugin indent on
 syntax enable
 " ------------------------------------------------------------
-
-autocmd VimEnter * execute 'Defx'
-nnoremap <silent> <Leader>f :<C-u>Defx<CR>
-
-autocmd BufWritePost * call defx#redraw()
-autocmd BUfEnter * call defx#redraw()
-
 

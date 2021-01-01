@@ -74,16 +74,18 @@ repo = 'maxmellon/vim-jsx-pretty'
 repo = 'HerringtonDarkholme/yats.vim'
 
 # color scheme
-[[plugins]]                                    
-repo = 'dracula/vim'                                          
-name = 'dracula'
+[[plugins]]
+repo = 'cocopon/iceberg.vim'                                          
 hook_add = '''
-  source ~/.config/nvim/dracula.vim
+  colorscheme iceberg
+  source ~/.config/nvim/colorscheme.vim
 '''
-# [[plugins]]                                    
-# repo = 'altercation/vim-colors-solarized'
-# name = 'solarized'
-
+[[plugins]]
+repo = 'gkeep/iceberg-dark'                                          
+hook_add = '''
+  let g:lightline = {'colorscheme': 'icebergDark'}
+  let g:airline_theme='icebergDark'
+'''
 
 # closing bracket complement
 [[plugins]]                                    

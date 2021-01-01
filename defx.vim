@@ -60,3 +60,8 @@ autocmd FileType defx call s:defx_my_settings()
     nnoremap <silent><buffer><expr> cd defx#do_action('change_vim_cwd')
     nnoremap <silent><buffer><expr> t defx#do_action('open','tabnew')
   endfunction
+
+nnoremap <silent> <Leader>f :<C-u>Defx<CR>
+autocmd VimEnter * execute 'Defx'
+autocmd BufWritePost * call defx#redraw()
+autocmd BUfEnter * call defx#redraw()
