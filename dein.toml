@@ -115,7 +115,20 @@ hook_add = '''
   source ~/.config/nvim/ale.vim
 '''
 hook_post_source = '''
-let g:ale_linters = {
-  \'Dockerfile': ['dockerfile_lint', 'hadolint']
-  \}
+  let g:ale_linters = {
+    \'Dockerfile': ['dockerfile_lint', 'hadolint']
+    \}
+'''
+
+# markdown
+[[plugins]]
+repo = 'godlygeek/tabular'
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+depends = ['tabular']
+[[plugins]]
+repo = 'iamcco/markdown-preview.nvim'
+on_ft = ['markdown', 'pandoc.markdown', 'rmd']
+build = '''
+  'sh -c "cd app && yarn install"'
 '''

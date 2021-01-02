@@ -22,7 +22,7 @@ inoremap <silent> jj <ESC>
 
 " Insert Mode movekey bind
 inoremap <C-d> <BS>
-nnoremap <C-h> <Left>                                                                                                                 
+inoremap <C-h> <Left>                                                                                                                 
 inoremap <C-l> <Right>
 inoremap <C-k> <Up> 
 inoremap <C-j> <Down>
@@ -52,16 +52,16 @@ set tabstop=2                                                   " tabは半角2�
 set shiftwidth=2                                                " tabの幅
 
 " search and replacement setting
-set ignorecase
+set ignorecase                                                  " ignore upper/lower case when searching
+set incsearch                                                   " show partial matches for a search phrase
+set hlsearch                                                    " highlight all matching phrases
 set smartcase
 set wrapscan
-set incsearch
 set inccommand=split
 
 " other settings
 set autoindent
 set clipboard=unnamed
-set hls
 set background=dark
 set termguicolors
 set pumblend=10
