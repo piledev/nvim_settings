@@ -6,14 +6,11 @@ cnoremap init :<C-u>edit $MYVIMRC<CR>      " init.vim 呼び出し
 noremap <Space>s :source $MYVIMRC<CR>      " init.vim 読み込み
 noremap <Space>w :<C-u>w<CR>               " ファイル保存
 noremap <F3> :<C-u>setlocal relativenumber!<CR>
+
 nnoremap <C-h> <C-w>h                      " vim 画面間の移動
-nnoremap <C-j> <C-w>j                      " 画面移動
-nnoremap <C-k> <C-w>k                      " 画面移動
-nnoremap <C-l> <C-w>l                      " 画面移動
-" nnoremap sj <C-w>j
-" nnoremap sk <C-w>k
-" nnoremap sl <C-w>l
-" nnoremap sh <C-w>h
+nnoremap <C-j> <C-w>j                      " vim 画面間の移動
+nnoremap <C-k> <C-w>k                      " vim 画面間の移動
+nnoremap <C-l> <C-w>l                      " vim 画面間の移動
 nnoremap ss :<C-u>sp<CR><C-w>j
 nnoremap sv :<C-u>vs<CR><C-w>l
 
@@ -37,6 +34,7 @@ set encoding=utf-8
 
 " editor setting
 set number                                                      " 行番号表示
+set relativenumber                                              " 相対行番号表示
 set splitbelow                                                  " 水平分割時に下に表示
 set splitright                                                  " 縦分割時を右に表示
 set noequalalways                                               " 分割時に自動調整を無効化
