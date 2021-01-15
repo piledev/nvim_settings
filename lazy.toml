@@ -5,10 +5,10 @@
 repo = 'cespare/vim-toml'                                    
 on_ft = 'toml'
 
-[[plugins]]
-repo     = 'prettier/vim-prettier'
-build    = 'npm install'
-on_ft    = ['javascript', 'typescript', 'vue', 'css', 'scss', 'json', 'markdown']
-hook_source = '''
-  source ~/.config/nvim/vim-prettier.vim
-'''
+# [[plugins]]
+# repo     = 'prettier/vim-prettier'
+# build    = 'npm install'
+# on_ft    = ['javascript', 'typescript', 'vue', 'css', 'scss', 'json', 'markdown']
+# hook_source = '''
+#   source ~/.config/nvim/vim-prettier.vim
+# '''
