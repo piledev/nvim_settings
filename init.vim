@@ -11,8 +11,8 @@ nnoremap <C-h> <C-w>h                      " vim 画面間の移動
 nnoremap <C-j> <C-w>j                      " vim 画面間の移動
 nnoremap <C-k> <C-w>k                      " vim 画面間の移動
 nnoremap <C-l> <C-w>l                      " vim 画面間の移動
-nnoremap ss :<C-u>sp<CR><C-w>j
-nnoremap sv :<C-u>vs<CR><C-w>l
+" nnoremap ss :<C-u>sp<CR><C-w>j
+" nnoremap sv :<C-u>vs<CR><C-w>l
 
 " Insert Mode
 inoremap <silent> jj <ESC>
