@@ -4,6 +4,8 @@ let g:coc_global_extensions = [
     \ 'coc-tsserver',
     \ 'coc-prettier',
     \ 'coc-eslint',
+    \ 'coc-html',
+    \ 'coc-css',
     \ ]
 
 inoremap <silent><expr> <TAB>

@@ -86,6 +86,13 @@ hook_add = '''
   let g:lightline = {'colorscheme': 'icebergDark'}
   let g:airline_theme='icebergDark'
 '''
+# [[plugins]]
+# repo = 'dracula/vim'
+# name = 'dracula'
+# hook_add = '''
+#   colorscheme dracula
+#   source ~/.config/nvim/colorscheme.vim
+# '''
 
 # closing bracket complement
 [[plugins]]                                    
@@ -132,3 +139,7 @@ on_ft = ['markdown', 'pandoc.markdown', 'rmd']
 build = '''
   'sh -c "cd app && yarn install"'
 '''
+
+# XtermColorTable
+[[plugins]]
+repo = 'guns/xterm-color-table.vim'
