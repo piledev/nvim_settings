@@ -46,7 +46,7 @@ set cursorline                                                  " カーソル�
 
 " tab setting
 set expandtab                                                   " tabを複数のspaceに置き換え
-set tabstop=4                                                   " tabは半角2文字
+set tabstop=4                                                   " tabは半角4文字
 set shiftwidth=4                                                " tabの幅
 
 " search and replacement setting
@@ -62,7 +62,8 @@ set autoindent
 set clipboard=unnamed
 set background=dark
 set termguicolors
-set pumblend=10
+set pumblend=20
+set winblend=20
 " ------------------------------------------------------------
 " dein.vim set up
 " ------------------------------------------------------------

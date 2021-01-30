@@ -143,3 +143,7 @@ build = '''
 # XtermColorTable
 [[plugins]]
 repo = 'guns/xterm-color-table.vim'
+
+#lookml
+[[plugins]]
+repo = 'chrismaher/vim-lookml'
