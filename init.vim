@@ -46,8 +46,8 @@ set cursorline                                                  " カーソル�
 
 " tab setting
 set expandtab                                                   " tabを複数のspaceに置き換え
-set tabstop=4                                                   " tabは半角4文字
-set shiftwidth=4                                                " tabの幅
+set tabstop=2                                                   " tabは半角4文字
+set shiftwidth=2                                                " tabの幅
 
 " search and replacement setting
 set ignorecase                                                  " ignore upper/lower case when searching
