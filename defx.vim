@@ -1,29 +1,29 @@
 call defx#custom#column('icon', {
-      \ 'directory_icon': '▸',
-      \ 'opened_icon': '▾',
-      \ 'root_icon': ' ',
-      \ })
+  \ 'directory_icon': '▸',
+  \ 'opened_icon': '▾',
+  \ 'root_icon': ' ',
+  \ })
 
 call defx#custom#column('filename', {
-      \ 'min_width': 40,
-      \ 'max_width': 40,
-      \ })
+  \ 'min_width': 40,
+  \ 'max_width': 40,
+  \ })
 
 call defx#custom#column('mark', {
-      \ 'readonly_icon': '✗',
-      \ 'selected_icon': '✓',
-      \ })
+  \ 'readonly_icon': '✗',
+  \ 'selected_icon': '✓',
+  \ })
 
 call defx#custom#option('_', {
-      \ 'winwidth': 40,
-      \ 'split': 'vertical',
-      \ 'direction': 'topleft',
-      \ 'show_ignored_files': 1,
-      \ 'buffer_name': 'explorer',
-      \ 'toggle': 1,
-      \ 'resume': 1,
-      \ 'columns': 'indent:git:icons:filename:mark',
-      \ })
+  \ 'winwidth': 40,
+  \ 'split': 'vertical',
+  \ 'direction': 'topleft',
+  \ 'show_ignored_files': 1,
+  \ 'buffer_name': 'explorer',
+  \ 'toggle': 1,
+  \ 'resume': 1,
+  \ 'columns': 'indent:git:icons:filename:mark',
+  \ })
 
 nnoremap <silent>fi :<C-u>Defx -new `expand('%:p:h')` -search=`expand('%:p')`<CR>
 autocmd FileType defx call s:defx_my_settings()

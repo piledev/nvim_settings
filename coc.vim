@@ -1,17 +1,17 @@
 " Extensions
 let g:coc_global_extensions = [
-    \ 'coc-json',
-    \ 'coc-tsserver',
-    \ 'coc-prettier',
-    \ 'coc-eslint',
-    \ 'coc-html',
-    \ 'coc-css',
-    \ ]
+  \ 'coc-json',
+  \ 'coc-tsserver',
+  \ 'coc-prettier',
+  \ 'coc-eslint',
+  \ 'coc-html',
+  \ 'coc-css',
+  \ ]
 
 inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
+  \ pumvisible() ? "\<C-n>" :
+  \ <SID>check_back_space() ? "\<TAB>" :
+  \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 function! s:check_back_space() abort
