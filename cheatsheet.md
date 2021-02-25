@@ -17,10 +17,11 @@
 
 ### dein
 
-| command              | motion                  |
-| -------------------- | ----------------------- |
-| :call dein#install() | install changed plugins |
-| :call dein#update()  | update whole plugins    |
+| command                           | motion                  |
+| --------------------------------- | ----------------------- |
+| :call dein#install()              | install changed plugins |
+| :call dein#update()               | update whole plugins    |
+| :call dein#recache_runtimepath()  | delete cache            |
 
 ### vim-commentary
 
