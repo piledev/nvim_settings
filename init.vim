@@ -19,9 +19,9 @@ inoremap <silent> jj <ESC>
 
 " Insert Mode movekey bind
 inoremap <C-d> <BS>
-inoremap <C-h> <Left>                                                                                                                 
+inoremap <C-h> <Left>
 inoremap <C-l> <Right>
-inoremap <C-k> <Up> 
+inoremap <C-k> <Up>
 inoremap <C-j> <Down>
 
 let mapleader = "\<Space>"
@@ -29,7 +29,7 @@ let mapleader = "\<Space>"
 " -----------------------------------------------
 " options
 " -----------------------------------------------
-" encode setting                                                                                                                                 
+" encode setting
 set encoding=utf-8
 
 " editor setting
@@ -71,12 +71,12 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
-let s:dein_dir = expand('~/.vim/dein')    
-let s:dein_repo_dir = s:dein_dir .  '/repos/github.com/Shougo/dein.vim'    
-let s:toml_dir = expand('~/.config/nvim')    
+let s:dein_dir = expand('~/.vim/dein')
+let s:dein_repo_dir = s:dein_dir .  '/repos/github.com/Shougo/dein.vim'
+let s:toml_dir = expand('~/.config/nvim')
 
-" Required:    
-execute 'set runtimepath^=' . s:dein_repo_dir    
+" Required:
+execute 'set runtimepath^=' . s:dein_repo_dir
 
 " Required:
 if dein#load_state(s:dein_dir)
