@@ -96,4 +96,6 @@ endif
 filetype plugin indent on
 syntax enable
 " ------------------------------------------------------------
-
+"  Vim Markdown set up
+" ------------------------------------------------------------
+let g:vim_markdown_folding_disabled = 1
