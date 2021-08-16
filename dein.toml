@@ -27,6 +27,13 @@ depends = ['vim-devicons']
 [[plugins]]
 repo = 'ryanoasis/vim-devicons'
 
+# display function signatures
+# [[plugins]]
+# repo = 'shougo/echodoc.vim'
+# hook_add = '''
+#   source ~/.config/nvim/echodoc.vim
+# '''
+
 
 # [[plugins]]
 # repo = 'lighttiger2505/deoplete-vim-lsp'
@@ -45,6 +52,9 @@ repo = 'ryanoasis/vim-devicons'
 #  '''
 #  on_i = 1
 
+# # for Golang
+# [[plugins]]                                    
+# repo = 'fatih/vim-go' 
 
 # Coc
 [[plugins]]
@@ -139,6 +149,3 @@ build = '''
 [[plugins]]
 repo = 'guns/xterm-color-table.vim'
 
-#lookml
-[[plugins]]
-repo = 'chrismaher/vim-lookml'

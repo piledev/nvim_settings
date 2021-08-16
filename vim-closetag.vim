@@ -1,7 +1,7 @@
 " filenames like *.xml, *.html, *.xhtml, ...
 " These are the file extensions where this plugin is enabled.
 "
-let g:closetag_filenames = '*.html,*.jsx,*.tsx'
+let g:closetag_filenames = '*.html,*.jsx,*.tsx,*.js,*.ts'
 
 " dict
 " Disables auto-close if not in a "valid" region (based on filetype)

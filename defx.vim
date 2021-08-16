@@ -5,8 +5,8 @@ call defx#custom#column('icon', {
   \ })
 
 call defx#custom#column('filename', {
-  \ 'min_width': 40,
-  \ 'max_width': 40,
+  \ 'min_width': 10,
+  \ 'max_width': 32,
   \ })
 
 call defx#custom#column('mark', {
@@ -23,6 +23,7 @@ call defx#custom#option('_', {
   \ 'toggle': 1,
   \ 'resume': 1,
   \ 'columns': 'indent:git:icons:filename:mark',
+  \ 'focus': 0,
   \ })
 
 nnoremap <silent>fi :<C-u>Defx -new `expand('%:p:h')` -search=`expand('%:p')`<CR>
