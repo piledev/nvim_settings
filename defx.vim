@@ -19,11 +19,11 @@ call defx#custom#option('_', {
   \ 'split': 'vertical',
   \ 'direction': 'topleft',
   \ 'show_ignored_files': 1,
-  \ 'buffer_name': 'explorer',
+  \ 'buffer_name': 'defx',
   \ 'toggle': 1,
   \ 'resume': 1,
   \ 'columns': 'indent:git:icons:filename:mark',
-  \ 'focus': 0,
+  \ 'focus': 1,
   \ })
 
 nnoremap <silent>fi :<C-u>Defx -new `expand('%:p:h')` -search=`expand('%:p')`<CR>

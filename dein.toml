@@ -77,11 +77,11 @@ repo = 'vim-airline/vim-airline'
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
 
-# React Highliting
-[[plugins]]
-repo = 'maxmellon/vim-jsx-pretty'
-[[plugins]]
-repo = 'HerringtonDarkholme/yats.vim'
+# # React Highliting
+# [[plugins]]
+# repo = 'maxmellon/vim-jsx-pretty'
+# [[plugins]]
+# repo = 'HerringtonDarkholme/yats.vim'
 
 # color scheme
 [[plugins]]
@@ -149,3 +149,6 @@ build = '''
 [[plugins]]
 repo = 'guns/xterm-color-table.vim'
 
+# winresizer
+[[plugins]]
+repo = 'simeji/winresizer'

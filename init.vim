@@ -1,16 +1,18 @@
- -----------------------------------------------
+" -----------------------------------------------
 " key bind
 " -----------------------------------------------
+let mapleader = "\<Space>"
 "  Normal Mode
-cnoremap init :<C-u>edit $MYVIMRC<CR>      " init.vim 呼び出し
-noremap <Space>s :source $MYVIMRC<CR>      " init.vim 読み込み
-noremap <Space>w :<C-u>w<CR>               " ファイル保存
-noremap <F3> :<C-u>setlocal relativenumber!<CR>
+cnoremap init :<C-u>edit $MYVIMRC<CR>               " init.vim 呼び出し
+noremap <Space>s :source $MYVIMRC<CR>               " init.vim 読み込み
+noremap <Space>w :<C-u>w<CR>                        " ファイル保存
+noremap <F3> :<C-u>setlocal relativenumber!<CR>     " 行番号表示の切り替え（絶対行番号/相対行番号)
+nnoremap <Leader>c :<C-u>setlocal cursorcolumn!<CR> " カーソルハイライト（列）のON/OFF
 
-nnoremap <C-h> <C-w>h                      " vim 画面間の移動
-nnoremap <C-j> <C-w>j                      " vim 画面間の移動
-nnoremap <C-k> <C-w>k                      " vim 画面間の移動
-nnoremap <C-l> <C-w>l                      " vim 画面間の移動
+nnoremap <C-h> <C-w>h                               " vim 画面間の移動
+nnoremap <C-j> <C-w>j                               " vim 画面間の移動
+nnoremap <C-k> <C-w>k                               " vim 画面間の移動
+nnoremap <C-l> <C-w>l                               " vim 画面間の移動
 " nnoremap ss :<C-u>sp<CR><C-w>j
 " nnoremap sv :<C-u>vs<CR><C-w>l
 
@@ -23,8 +25,6 @@ inoremap <C-h> <Left>
 inoremap <C-l> <Right>
 inoremap <C-k> <Up>
 inoremap <C-j> <Down>
-
-let mapleader = "\<Space>"
 
 " -----------------------------------------------
 " options
@@ -42,7 +42,8 @@ set wildmenu                                                    " コマンド�
 
 " cursor setting
 set ruler                                                       " カーソルの位置表示
-set cursorline                                                  " カーソルハイライト
+set cursorline                                                  " カーソルハイライト（行）
+" set cursorcolumn                                                " カーソルハイライト（列）
 
 " tab setting
 set expandtab                                                   " tabを複数のspaceに置き換え
@@ -65,6 +66,7 @@ set termguicolors
 set pumblend=20
 set winblend=20
 set imdisable
+set whichwrap=b,s,h,l,<,>,[,],~
 " ------------------------------------------------------------
 " dein.vim set up
 " ------------------------------------------------------------
@@ -107,3 +109,8 @@ let g:vim_markdown_folding_disabled=1
 "  dein set up
 " ------------------------------------------------------------
 let g:dein#auto_recache=1
+
+" ------------------------------------------------------------
+"  vim-markdown set up
+" ------------------------------------------------------------
+let g:vim_markdown_new_list_item_indent = 2
