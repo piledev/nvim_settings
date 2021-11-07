@@ -5,10 +5,19 @@
 repo = 'cespare/vim-toml'                                    
 on_ft = 'toml'
 
-# [[plugins]]
-# repo     = 'prettier/vim-prettier'
-# build    = 'npm install'
-# on_ft    = ['javascript', 'typescript', 'vue', 'css', 'scss', 'json', 'markdown']
-# hook_source = '''
-#   source ~/.config/nvim/vim-prettier.vim
-# '''
+[[plugins]]
+repo = 'iamcco/markdown-preview.nvim'
+on_ft = ['markdown', 'pandoc.markdown', 'rmd']
+build = 'sh -c "cd app && npm install"'
+
+# debugger for golang
+[[plugins]]
+repo = 'benmills/vimux'
+on_ft = 'go'
+[[plugins]]
+repo = 'sebdah/vim-delve'
+on_ft = 'go'
+hook_add = '''
+  autocmd FileType go nmap <silent> ;d :DlvToggleBreakpoint<CR>
+  let g:delve_use_vimux = 1
+'''

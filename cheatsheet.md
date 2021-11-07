@@ -4,6 +4,7 @@
 
 | command           | motion                                                                               |
 | ----------------- | ------------------------------------------------------------------------------------ |
+| >>                | indent right                                                                         |
 | <c-e>             | window resizer                                                                       |
 | <c-w>             | <prefix> of window operation                                                         |
 | <c-w>q            | close current window                                                                 |
@@ -18,11 +19,11 @@
 
 ### dein
 
-| command                           | motion                  |
-| --------------------------------- | ----------------------- |
-| :call dein#install()              | install changed plugins |
-| :call dein#update()               | update whole plugins    |
-| :call dein#recache_runtimepath()  | delete cache            |
+| command                          | motion                  |
+| -------------------------------- | ----------------------- |
+| :call dein#install()             | install changed plugins |
+| :call dein#update()              | update whole plugins    |
+| :call dein#recache_runtimepath() | delete cache            |
 
 ### vim-commentary
 

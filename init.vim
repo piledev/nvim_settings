@@ -104,6 +104,7 @@ syntax enable
 "  Vim Markdown set up
 " ------------------------------------------------------------
 let g:vim_markdown_folding_disabled=1
+let g:vim_markdown_new_list_item_indent = 2
 
 " ------------------------------------------------------------
 "  dein set up
@@ -111,6 +112,11 @@ let g:vim_markdown_folding_disabled=1
 let g:dein#auto_recache=1
 
 " ------------------------------------------------------------
-"  vim-markdown set up
+"  vim-airline set up
 " ------------------------------------------------------------
-let g:vim_markdown_new_list_item_indent = 2
+" let g:airline_theme='powerlineish'
+" let g:airline_theme='luna'
+" let g:airline_theme='icebergDark'
+" let g:airline_theme='durant'
+" let g:airline_theme='wombat'
+" let g:airline_theme='icebergDark'

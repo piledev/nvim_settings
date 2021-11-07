@@ -10,7 +10,9 @@
     "jsonc",
     "go",
     "python",
-    "graphql"
+    "graphql",
+    "yaml",
+    "markdown"
   ],
   "coc.preferences.formatOnType": true,
   "prettier.arrowParens": "avoid",
@@ -18,5 +20,14 @@
   "prettier.tabWidth": 2,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
-  "eslint.enable": false
+  "eslint.enable": false,
+
+  "languageserver": {
+    "terraform": {
+      "command": "terraform-lsp",
+      "filetypes": ["terraform", "tf"],
+      "initializationOptions": {},
+      "settings": {}
+    }
+  }
 }
