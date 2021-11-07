@@ -27,6 +27,13 @@ depends = ['vim-devicons']
 [[plugins]]
 repo = 'ryanoasis/vim-devicons'
 
+# display function signatures
+# [[plugins]]
+# repo = 'shougo/echodoc.vim'
+# hook_add = '''
+#   source ~/.config/nvim/echodoc.vim
+# '''
+
 
 # [[plugins]]
 # repo = 'lighttiger2505/deoplete-vim-lsp'
@@ -45,6 +52,9 @@ repo = 'ryanoasis/vim-devicons'
 #  '''
 #  on_i = 1
 
+# # for Golang
+# [[plugins]]                                    
+# repo = 'fatih/vim-go' 
 
 # Coc
 [[plugins]]
@@ -64,14 +74,23 @@ repo = 'tpope/vim-commentary'
 # status bar
 [[plugins]]
 repo = 'vim-airline/vim-airline'
+depends = ['vim-airline-themes']
+hook_add = '''
+  let g:airline#extensions#tabline#enabled=1
+  let g:airline_powerline_fonts=1
+'''
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
 
-# React Highliting
-[[plugins]]
-repo = 'maxmellon/vim-jsx-pretty'
-[[plugins]]
-repo = 'HerringtonDarkholme/yats.vim'
+# fugitive
+[[plugins]]                                    
+repo = 'tpope/vim-fugitive' 
+
+# # React Highliting
+# [[plugins]]
+# repo = 'maxmellon/vim-jsx-pretty'
+# [[plugins]]
+# repo = 'HerringtonDarkholme/yats.vim'
 
 # color scheme
 [[plugins]]
@@ -128,14 +147,12 @@ repo = 'godlygeek/tabular'
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
 depends = ['tabular']
-[[plugins]]
-repo = 'iamcco/markdown-preview.nvim'
-on_ft = ['markdown', 'pandoc.markdown', 'rmd']
-build = '''
-  'sh -c "cd app && yarn install"'
-'''
 
 # XtermColorTable
 [[plugins]]
 repo = 'guns/xterm-color-table.vim'
+
+# winresizer
+[[plugins]]
+repo = 'simeji/winresizer'
 

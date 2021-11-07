@@ -4,10 +4,12 @@
 
 | command           | motion                                                                               |
 | ----------------- | ------------------------------------------------------------------------------------ |
+| >>                | indent right                                                                         |
+| <c-e>             | window resizer                                                                       |
 | <c-w>             | <prefix> of window operation                                                         |
 | <c-w>q            | close current window                                                                 |
-| ss                | split current window horizontal                                                      |
-| sv                | split current window vertical                                                        |
+| :sp               | split current window horizontal                                                      |
+| :vs               | split current window vertical                                                        |
 | :s/old/new/g      | substitute 'new' for all 'old's in current line                                      |
 | :11,14s/old/new/g | substitute 'new' for all 'old's lines between 11 and 14                              |
 | :%s/old/new/g     | substitute 'new' for all 'old's in a file                                            |
@@ -17,11 +19,11 @@
 
 ### dein
 
-| command                           | motion                  |
-| --------------------------------- | ----------------------- |
-| :call dein#install()              | install changed plugins |
-| :call dein#update()               | update whole plugins    |
-| :call dein#recache_runtimepath()  | delete cache            |
+| command                          | motion                  |
+| -------------------------------- | ----------------------- |
+| :call dein#install()             | install changed plugins |
+| :call dein#update()              | update whole plugins    |
+| :call dein#recache_runtimepath() | delete cache            |
 
 ### vim-commentary
 

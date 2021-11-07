@@ -5,8 +5,8 @@ call defx#custom#column('icon', {
   \ })
 
 call defx#custom#column('filename', {
-  \ 'min_width': 40,
-  \ 'max_width': 40,
+  \ 'min_width': 10,
+  \ 'max_width': 32,
   \ })
 
 call defx#custom#column('mark', {
@@ -19,17 +19,19 @@ call defx#custom#option('_', {
   \ 'split': 'vertical',
   \ 'direction': 'topleft',
   \ 'show_ignored_files': 1,
-  \ 'buffer_name': 'explorer',
+  \ 'buffer_name': 'defx',
   \ 'toggle': 1,
   \ 'resume': 1,
   \ 'columns': 'indent:git:icons:filename:mark',
+  \ 'focus': 1,
   \ })
 
 nnoremap <silent>fi :<C-u>Defx -new `expand('%:p:h')` -search=`expand('%:p')`<CR>
 autocmd FileType defx call s:defx_my_settings()
   function! s:defx_my_settings() abort
     nnoremap <silent><buffer><expr> <CR> defx#do_action('drop')
-    nnoremap <silent><buffer><expr> c defx#do_action('copy')
+    " nnoremap <silent><buffer><expr> c defx#do_action('copy')
+    nnoremap <silent><buffer><expr> y defx#do_action('copy')
     nnoremap <silent><buffer><expr> m defx#do_action('move')
     nnoremap <silent><buffer><expr> p defx#do_action('paste')
     nnoremap <silent><buffer><expr> l defx#do_action('drop')
