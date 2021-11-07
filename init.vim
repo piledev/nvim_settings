@@ -15,7 +15,7 @@ nnoremap <C-l> <C-w>l                      " vim 画面間の移動
 " nnoremap sv :<C-u>vs<CR><C-w>l
 
 " Insert Mode
-inoremap <silent> jj <ESC>
+" inoremap <silent> jj <ESC>
 
 " Insert Mode movekey bind
 inoremap <C-d> <BS>
