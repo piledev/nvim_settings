@@ -5,11 +5,6 @@
 repo = 'cespare/vim-toml'                                    
 on_ft = 'toml'
 
-[[plugins]]
-repo = 'iamcco/markdown-preview.nvim'
-on_ft = ['markdown', 'pandoc.markdown', 'rmd']
-build = 'sh -c "cd app && npm install"'
-
 # debugger for golang
 [[plugins]]
 repo = 'benmills/vimux'

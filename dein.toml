@@ -52,10 +52,6 @@ repo = 'ryanoasis/vim-devicons'
 #  '''
 #  on_i = 1
 
-# # for Golang
-# [[plugins]]                                    
-# repo = 'fatih/vim-go' 
-
 # Coc
 [[plugins]]
 repo = 'neoclide/coc.nvim'
@@ -155,4 +151,9 @@ repo = 'guns/xterm-color-table.vim'
 # winresizer
 [[plugins]]
 repo = 'simeji/winresizer'
+
+[[plugins]]
+repo = 'iamcco/markdown-preview.nvim'
+on_ft = ['markdown', 'pandoc.markdown', 'rmd']
+build = 'sh -c "cd app && npm install"'
 

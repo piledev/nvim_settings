@@ -15,6 +15,9 @@ nnoremap <C-k> <C-w>k                               " vim 画面間の移動
 nnoremap <C-l> <C-w>l                               " vim 画面間の移動
 " nnoremap ss :<C-u>sp<CR><C-w>j
 " nnoremap sv :<C-u>vs<CR><C-w>l
+"
+nnoremap b[ :bprev<CR>
+nnoremap b] :bnext<CR>
 
 " Insert Mode
 " inoremap <silent> jj <ESC>
@@ -26,6 +29,7 @@ inoremap <C-l> <Right>
 inoremap <C-k> <Up>
 inoremap <C-j> <Down>
 
+
 " -----------------------------------------------
 " options
 " -----------------------------------------------
@@ -34,7 +38,7 @@ set encoding=utf-8
 
 " editor setting
 set number                                                      " 行番号表示
-set relativenumber                                              " 相対行番号表示
+" set relativenumber                                              " 相対行番号表示
 set splitbelow                                                  " 水平分割時に下に表示
 set splitright                                                  " 縦分割時を右に表示
 set noequalalways                                               " 分割時に自動調整を無効化
@@ -47,7 +51,7 @@ set cursorline                                                  " カーソル�
 
 " tab setting
 set expandtab                                                   " tabを複数のspaceに置き換え
-set tabstop=2                                                   " tabは半角4文字
+set tabstop=2                                                  " tabは半角4文字
 set shiftwidth=2                                                " tabの幅
 
 " search and replacement setting
